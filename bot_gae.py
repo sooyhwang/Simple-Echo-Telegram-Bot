@@ -19,7 +19,7 @@ def webhook_handler():
         update = telegram.Update.de_json(request.get_json(force=True))
 
         chat_id = update.message.chat.id
-        text = update.message.text
+        text = update.message.text.encode('utf-8')
 
         # repeat the same message back (echo)
         bot.sendMessage(chat_id=chat_id, text=text)
