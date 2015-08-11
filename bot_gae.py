@@ -12,6 +12,7 @@ app = Flask(__name__)
 global bot
 bot = telegram.Bot(token='TOKEN')
 
+
 @app.route('/HOOK', methods=['POST'])
 def webhook_handler():
     if request.method == "POST":
@@ -19,6 +20,8 @@ def webhook_handler():
         update = telegram.Update.de_json(request.get_json(force=True))
 
         chat_id = update.message.chat.id
+
+        # Telegram understands UTF-8, so encode text for unicode compatibility
         text = update.message.text.encode('utf-8')
 
         # repeat the same message back (echo)
