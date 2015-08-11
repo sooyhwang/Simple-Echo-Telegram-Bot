@@ -1,5 +1,5 @@
 # Simple-Echo-Telegram-Bot
-*A simple Python Telegram bot that echoes your input with Flask microframework, setWebhook method, and Google App Engine (optional)*
+*A simple Python Telegram bot that echoes your input. Uses Flask microframework, setWebhook method, and Google App Engine (optional)*
 
 This example shows you how to set up webhook, and how to receive and send a text message using the [python-telegram-bot](https://github.com/leandrotoledo/python-telegram-bot) library. It supports echoing unicode messages (in UTF-8).
 
