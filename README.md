@@ -12,8 +12,8 @@ Tested on Google App Engine (GAE) with virtualenv enabled. I followed the tutori
 
 ## Required
 * Python 2.7
-* [python-telegram-bot](https://github.com/leandrotoledo/python-telegram-bot) module
-* [Flask](http://flask.pocoo.org/) microframework
+* [python-telegram-bot](https://github.com/leandrotoledo/python-telegram-bot) module (tested with version 2.5)
+* [Flask](http://flask.pocoo.org/) microframework (tested with version 0.10.1)
 
 ## How to use
 * Install the script
