@@ -17,6 +17,7 @@ Tested on Google App Engine (GAE) with virtualenv enabled. I followed the tutori
 
 ## How to use
 * Install the script
+* Edit TOKEN, URL, HOOK in bot.py or bot_gae.py, and GAE_PROJECT_NAME in app.yaml
 * Visit https://URL/set_webhook on your web browser to set up webhook.
 * Start chatting in Telegram and enjoy your echoes! :)
 
