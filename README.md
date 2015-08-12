@@ -24,7 +24,7 @@ Tested on Google App Engine (GAE) with virtualenv enabled. I followed the tutori
 ## About SSL Certificate
 If your server is not getting any messages from Telegram, chances are your SSL certificate installation lacks the "chain" file. If you received an interm (or intermediate) file from the issuer, install it as well. Here's what the SSL directives in the Virtual Host setting should look like ([source](https://access.redhat.com/solutions/43575)):
 ```
-SSLCertificateFile /etc/ssl/crt/public.crt           //Locate Certificate File
-SSLCertificateKeyFile /etc/ssl/crt/private.key           //Locate Private Key File
-SSLCertificateChainFile /etc/ssl/crt/intermediate.crt      //Locate the Intermediate File
+SSLCertificateFile /etc/ssl/crt/public.crt              //Locate Certificate File
+SSLCertificateKeyFile /etc/ssl/crt/private.key          //Locate Private Key File
+SSLCertificateChainFile /etc/ssl/crt/intermediate.crt   //Locate the Intermediate File
 ```
