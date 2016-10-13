@@ -2,7 +2,7 @@
 
 import sys
 import os
-sys.path.append(os.path.join(os.path.abspath('.'), 'venv/Lib/site-packages'))
+sys.path.append(os.path.join(os.path.abspath('.'), 'venv/lib/site-packages'))
 
 import telegram
 from flask import Flask, request
@@ -17,7 +17,7 @@ bot = telegram.Bot(token='TOKEN')
 def webhook_handler():
     if request.method == "POST":
         # retrieve the message in JSON and then transform it to Telegram object
-        update = telegram.Update.de_json(request.get_json(force=True))
+        update = telegram.Update.de_json(request.get_json(force=True), bot)
 
         chat_id = update.message.chat.id
 
